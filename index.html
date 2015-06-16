@@ -8,9 +8,28 @@
       font-size: 50px;
       text-align: center;
     }
+    img {
+      display: block;
+      margin:0 auto;
+    }
+    #two{
+      width:300px;
+      height: 700px;
+      display: none;
+    }
   </style>
+  <script>
+    window.onload = function(){
+      document.getElementById('one').onclick = function(){
+        this.style.display = 'none';
+        document.getElementById('two').style.display='block';
+      }
+    }
+  </script>
 </head>
 <body>
-  <h1>이정도면 되겠니 송희야 심플하지?</h1>
+  <h1>나의 아름다운 뒷태♥</h1>
+  <img src="aa.jpg" alt="" id="one">
+  <img src="bb.jpg" alt="" id="two">
 </body>
 </html>
